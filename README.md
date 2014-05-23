@@ -4,7 +4,7 @@ CourseProject-UCIHAR
 Getting and Cleaning Data, Coursera
 ---------------------
 
-* This repo is for the purpose of submmiting course project of Getting and Cleaning Data, Coursera
+* This repo is for the purpose of submmiting course project of Getting and Cleaning Data, Coursera.
 The main goal of this project is to create tidy data as it is described in project.
 
 * The original data is availabe below :
