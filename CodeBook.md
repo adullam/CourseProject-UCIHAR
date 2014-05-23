@@ -48,12 +48,21 @@ These are the more detailed strategy to get tidy data set from original data - h
 2. Merges the training and the test sets to create one data set.
   * Merged X.train and X.test as one data sets
   * Named each variable names with feature file
-  * Merged subject files as well and added subject label to data set
+  * Merged subject files as well and added subject variable to data set
 3. Extracts only the measurements on the mean and standard deviation for each measurement.
   * Made a fuction which can extract feature name with word - "mean" and "std"
   * Before the step above excluded the word "Freq" to make sure "meanFreq" is not included with "mean"
+  * Extracted data set from the feature names made by the fuction above.
 4. Uses descriptive activity names to name the activities in the data set.
-
+  * Merged Y.train and Y.test to get activity number  
+  * Added activity variable to original data set
+5. Appropriately labels the data set with descriptive activity names
+  * Labeled each activities name according to its number
+6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  * Used melt() and dcast() function in library(reshape2)
+  * melted data set with two variable - subject and activity
+  * Finally made tidy data set with the average of each variable with dcast() function
+  * Wrote data set as HAR mean summary.txt
 
 
 
